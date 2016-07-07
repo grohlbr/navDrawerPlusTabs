@@ -39,14 +39,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mFragmentTransaction = mFragmentManager.beginTransaction();
         mFragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
 
-        //NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         NavigationView navigationViewTop = (NavigationView) findViewById(R.id.nav_view_top);
         NavigationView navigationViewBottom = (NavigationView) findViewById(R.id.nav_view_bottom);
         navigationViewTop.setNavigationItemSelectedListener(this);
         navigationViewBottom.setNavigationItemSelectedListener(this);
-        //navigationView.setNavigationItemSelectedListener(this);
-
-
     }
 
     @Override
@@ -62,13 +58,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     protected void onResume() {
         super.onResume();
-
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-
     }
 
     @SuppressWarnings("StatementWithEmptyBody")
@@ -77,19 +71,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_home) {
-            Log.d("CLICKED: ", "HOME");
+        if (id == R.id.nav_tabs) {
+            Log.d("CLICKED: ", "TABS");
             FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
             xfragmentTransaction.replace(R.id.containerView, new TabFragment()).commit();
 
-        } else if (id == R.id.nav_history) {
-            Log.d("CLICKED: ", "HISTORY");
+        } else if (id == R.id.nav_thirdFrag) {
+            Log.d("CLICKED: ", "THIRD FRAGMENT");
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.containerView, new ThirdFragment()).commit();
         } else if (id == R.id.nav_settings) {
             Log.d("CLICKED: ", "SETTINGS");
-            //FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            //fragmentTransaction.replace(R.id.containerView, new SettingsFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

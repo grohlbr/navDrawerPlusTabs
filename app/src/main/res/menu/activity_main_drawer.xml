@@ -8,15 +8,15 @@
         android:checkableBehavior="single">
 
         <item
-            android:id="@+id/nav_home"
+            android:id="@+id/nav_tabs"
             android:icon="@android:drawable/ic_dialog_email"
-            android:title="@string/navigation_drawer_home"
+            android:title="@string/navigation_drawer_tabs"
             android:checked="true"/>
 
         <item
-            android:id="@+id/nav_history"
+            android:id="@+id/nav_thirdFrag"
             android:icon="@android:drawable/ic_dialog_email"
-            android:title="@string/navigation_drawer_history" />
+            android:title="@string/navigation_drawer_thirdFrag" />
 
     </group>
 

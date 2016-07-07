@@ -4,8 +4,8 @@
     <!-- Navigation Drawer -->
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="navigation_drawer_home">TabFragment</string>
-    <string name="navigation_drawer_history">ThirdFragment</string>
+    <string name="navigation_drawer_tabs">TabFragment</string>
+    <string name="navigation_drawer_thirdFrag">ThirdFragment</string>
     <string name="navigation_drawer_settings">Settings</string>
 
 
